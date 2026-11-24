@@ -1,13 +1,24 @@
-# Jacky 个人网站
+# Jacky 主站
 
-`site/` 是可以直接发布的静态目录。打开 `site/index.html` 即可浏览，也可在工程根目录运行：
+<a href="https://jacky.paws.rodeo/"><img src="docs/readme/hero.png" alt="I build tools I use. Jacky 指向标题，缅因猫坐在一旁。"></a>
+
+我把日常工作中反复遇到的问题做成工具，也把解法和验证过程记下来。
+
+[打开主站](https://jacky.paws.rodeo/) · [看作品](https://jacky.paws.rodeo/#work) · [读笔记](https://jacky.paws.rodeo/#notes)
+
+## 作品
+
+<a href="https://jacky.paws.rodeo/#work"><img src="docs/readme/works.png" alt="Page Review 的批注画面、Paws 的双设备、Design OPS 的色卡和 Motion OPS 的雪山纸卡。"></a>
+
+- **Page Review** — 在网页上圈出要改的地方，把位置、评注和截图一起交给 AI。[打开工具](https://page-review.paws.rodeo/)
+- **Paws** — 用手机接续电脑上的 AI 会话，协作改稿时还能查看和恢复历史版本。[查看项目](https://github.com/wangjs-jacky/happy)
+- **Design OPS** — 整理做过的风格、页面结构和交互，方便下次找例子和验收。[逛设计风格库](https://design.paws.rodeo/)
+- **Motion OPS** — 按场景找可试用的网页动效和提示词，试试封面原位展开成详情。[打开 Motion Atlas](https://motion.paws.rodeo/motion-atlas/)
+
+## 本地预览
+
+在仓库根目录运行，再打开 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)。站点文件都在 [`site/`](site/)。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 ```
-
-浏览器打开 http://127.0.0.1:8000/。首页与关于页在 `site/index.html` 和 `site/about.html`。共享样式在 `site/site.css`，首屏构图在 `site/hero.css`，猫眼和作品卡滚动在 `site/motion.js`。Paws 的设备图和 Motion Atlas 纸卡有独立样式，首页可直接操作。
-
-首屏复用 Task 15 的「指向讲解」角色与已有灰蓝缅因猫。笔记和问候沿用「共看屏幕」和「打招呼」素材。Paws 使用本站原有的双设备概念插图。Motion OPS 使用 Motion Atlas「共享元素无缝展开」案例的原图与原理。[完整案例](https://motion.paws.rodeo/gallery/demos/first/cases/03.html)
-
-Page Review 的示例支持网页元素与整页批注，展开区附扩展真实截图与区域录制。作品卡内的操作都在当前页面完成，各项目入口提供实际作品地址。
