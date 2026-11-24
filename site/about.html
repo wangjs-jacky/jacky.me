@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="认识 Jacky 和他制作 AI 工具、记录设计做法的工作台。">
+  <title>关于我 · Jacky</title>
+  <link rel="icon" type="image/webp" href="assets/hello.webp">
+  <link rel="stylesheet" href="site.css">
+  <script src="motion.js" defer></script>
+</head>
+<body id="top" class="about-page">
+  <svg class="icon-library" width="0" height="0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.41-4.04-1.41-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.21.69.83.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0Z"/></symbol>
+      <symbol id="icon-douyin" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 0c.4 3.4 2.2 5.4 5.4 5.6v3.7a9.3 9.3 0 0 1-5.3-1.7v7.9A8.1 8.1 0 0 1 8.4 24a7.6 7.6 0 0 1-7.3-7.6 7.9 7.9 0 0 1 9-7.7v4.1a4 4 0 0 0-4.9 3.7c0 2 1.4 3.5 3.4 3.5s3.6-1.2 3.6-4.9V0Z"/></symbol>
+      <symbol id="icon-top" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17m-12 4h7m-7 3h4"/></g></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4H5a1 1 0 0 0-1 1v3m12-4h3a1 1 0 0 1 1 1v3M4 16v3a1 1 0 0 0 1 1h3m12-4v3a1 1 0 0 1-1 1h-3"/><circle cx="12" cy="12" r="2.5"/></g></symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M10 8.5v7l5.4-3.5Z"/></symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="8.5" y="7.5" width="11" height="13" rx="2"/><path d="M15.5 4H6.5a2 2 0 0 0-2 2v10"/></g></symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="shell masthead">
+    <a class="wordmark" href="index.html" aria-label="Jacky，回到首页">jacky<span>.</span></a>
+    <nav aria-label="主导航">
+      <a href="index.html#work">作品</a>
+      <a href="index.html#notes">笔记</a>
+      <a href="about.html" aria-current="page">关于</a>
+    </nav>
+    <a class="icon-button header-profile" aria-label="Jacky 的 GitHub" title="Jacky 的 GitHub" href="https://github.com/wangjs-jacky"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-github"/></svg></a>
+  </header>
+
+  <div class="reading-rail" aria-hidden="true"><span></span></div>
+  <main class="shell about-main" id="main" tabindex="-1">
+    <section class="about-intro" aria-labelledby="about-title">
+      <div class="about-lede">
+        <h1 id="about-title">关于我</h1>
+        <p class="about-lead">你好，我是 Jacky</p>
+        <p>我喜欢从手头的问题出发，做一个自己愿意天天用的小工具。做完以后，再用一个具体例子，把为什么这么做、怎样看出它有效讲明白。</p>
+        <p>最近做的事情大多围绕 AI 协作、网页交互和设计方法。比如把网页评注意见连同位置交给 AI，或者在离开电脑时，用手机继续手头的会话。</p>
+      </div>
+      <figure class="about-art">
+        <img class="parallax-art" data-depth="0.85" src="assets/about-studio.webp" alt="Jacky 在台灯下写工作笔记，灰蓝色缅因猫坐在一旁" width="1050" height="700" fetchpriority="high">
+      </figure>
+    </section>
+    <section class="about-details" aria-labelledby="about-links-title">
+      <h2 id="about-links-title">从哪里开始</h2>
+      <div class="about-paths">
+        <a href="index.html#work"><strong>看我在做的工具</strong><span>从网页评注到跨设备协作</span></a>
+        <a href="index.html#notes"><strong>读我留下的笔记</strong><span>看一个具体做法如何验证</span></a>
+        <a href="https://motion.paws.rodeo/motion-atlas/"><strong>试试 Motion Atlas</strong><span>把合适的网页动效带回项目</span></a>
+      </div>
+    </section>
+    <section class="about-connect" aria-labelledby="connect-title">
+      <h2 id="connect-title">也可以在这里找到我</h2>
+      <nav class="social-links" aria-label="公开账号与作品">
+          <a class="icon-button " aria-label="Jacky 的 GitHub" title="Jacky 的 GitHub" href="https://github.com/wangjs-jacky"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-github"/></svg></a>
+          <a class="icon-button " aria-label="Jacky 的抖音作品 · Paws 演示" title="Jacky 的抖音作品 · Paws 演示" href="https://www.douyin.com/video/7691335593644625161"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-douyin"/></svg></a>
+        </nav>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Jacky</span><a class="icon-button " aria-label="回到顶部" title="回到顶部" href="#top"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-top"/></svg></a></footer>
+</body>
+</html>

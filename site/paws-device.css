@@ -1,0 +1,78 @@
+.project-visual.paws-visual {
+  min-height: 288px;
+  background: radial-gradient(ellipse at 15% 10%, #e8eee5, transparent 63%), #cad7cc;
+}
+
+.paws-layers { position: absolute; inset: 0; }
+
+.paws-visual .paws-device {
+  --device-shadow: 0 8px 7px #31453736;
+  position: absolute;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 8%;
+  background: transparent;
+  filter: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .32s cubic-bezier(.2, .74, .26, 1), scale .18s ease-out;
+}
+
+.paws-visual .paws-device img {
+  width: 100%;
+  pointer-events: none;
+  filter: drop-shadow(var(--device-shadow));
+  transition: filter .25s ease;
+}
+
+.paws-visual .paws-desktop {
+  width: min(61%, 328px);
+  inset-inline-start: 9%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-5deg);
+  z-index: 2;
+}
+
+.paws-visual .paws-phone {
+  width: min(22%, 111px);
+  inset-inline-end: 10%;
+  top: 50%;
+  transform: translateY(-45%) rotate(9deg);
+  z-index: 1;
+}
+
+.paws-visual[data-front="phone"] .paws-phone {
+  transform: translateY(-55%) rotate(1deg) scale(1.14);
+  z-index: 3;
+}
+
+.paws-visual[data-front="phone"] .paws-desktop {
+  transform: translateY(-48%) rotate(-8deg) scale(.92);
+}
+
+.paws-visual .paws-device[aria-pressed="true"] {
+  --device-shadow: 0 13px 9px #233e325d;
+}
+
+.paws-visual .paws-device:focus-visible {
+  z-index: 4;
+  outline: 3px solid #285846;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .paws-visual .paws-device:hover { scale: 1.035; }
+}
+
+.paws-visual .paws-device:active { scale: .96; }
+
+@media (max-width: 640px) {
+  .project-visual.paws-visual { min-height: clamp(215px, 50vw, 288px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paws-visual .paws-device, .paws-visual .paws-device img { transition: none; }
+}

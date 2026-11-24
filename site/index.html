@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jacky 的个人网站。看看 Page Review、Paws、Design OPS，还有我在做这些工具时留下的笔记。">
+  <title>Jacky · 作品与笔记</title>
+  <link rel="icon" type="image/webp" href="assets/hello.webp">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="paws-device.css">
+  <link rel="stylesheet" href="motion-demo.css">
+  <script src="site.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="motion-demo.js" defer></script>
+</head>
+<body class="portfolio" id="top">
+  <svg class="icon-library" width="0" height="0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.41-4.04-1.41-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.21.69.83.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0Z"/></symbol>
+      <symbol id="icon-douyin" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 0c.4 3.4 2.2 5.4 5.4 5.6v3.7a9.3 9.3 0 0 1-5.3-1.7v7.9A8.1 8.1 0 0 1 8.4 24a7.6 7.6 0 0 1-7.3-7.6 7.9 7.9 0 0 1 9-7.7v4.1a4 4 0 0 0-4.9 3.7c0 2 1.4 3.5 3.4 3.5s3.6-1.2 3.6-4.9V0Z"/></symbol>
+      <symbol id="icon-top" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17m-12 4h7m-7 3h4"/></g></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4H5a1 1 0 0 0-1 1v3m12-4h3a1 1 0 0 1 1 1v3M4 16v3a1 1 0 0 0 1 1h3m12-4v3a1 1 0 0 1-1 1h-3"/><circle cx="12" cy="12" r="2.5"/></g></symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M10 8.5v7l5.4-3.5Z"/></symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="8.5" y="7.5" width="11" height="13" rx="2"/><path d="M15.5 4H6.5a2 2 0 0 0-2 2v10"/></g></symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="shell masthead">
+    <a class="wordmark" href="#top" aria-label="Jacky，回到首页">jacky<span>.</span></a>
+    <nav aria-label="主导航">
+      <a href="#work">作品</a>
+      <a href="#notes">笔记</a>
+      <a href="about.html">关于</a>
+    </nav>
+    <a class="icon-button header-profile" aria-label="Jacky 的 GitHub" title="Jacky 的 GitHub" href="https://github.com/wangjs-jacky"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-github"/></svg></a>
+  </header>
+
+  <div class="reading-rail" aria-hidden="true"><span></span></div>
+  <main class="shell" id="main" tabindex="-1">
+    <section class="hero hero-redesign" aria-labelledby="intro-title">
+      <div class="hero-composition">
+        <div class="hero-lettering">
+          <h1 id="intro-title" lang="en">
+            <span>I build</span>
+            <span class="hero-line-tools">tools I</span>
+            <span class="hero-line-use">use.</span>
+          </h1>
+          <figure class="hero-person">
+            <img src="assets/hero-jacky.webp" alt="戴眼镜和耳机的 Jacky 指向标题" width="627" height="627">
+          </figure>
+          <figure class="hero-mascot">
+            <img src="assets/hero-cat.webp" alt="看向标题的灰蓝缅因猫" width="680" height="680" fetchpriority="high">
+            <span class="hero-iris hero-iris-left" aria-hidden="true"><span></span></span>
+            <span class="hero-iris hero-iris-right" aria-hidden="true"><span></span></span>
+            <div class="greeting">
+              <button class="greeting-trigger" type="button" aria-label="和猫打个招呼" aria-expanded="false" aria-controls="greeting-card"></button>
+              <div class="greeting-card" id="greeting-card" hidden>
+                <img src="assets/hello.webp" alt="" width="72" height="72">
+                <p>嗨，欢迎来逛我的工作台。</p>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="hero-end">
+          <p class="hero-identity"><strong>Jacky</strong> <span>AI 工具与网页交互</span></p>
+          <a class="hero-work-link brush-link" href="#work">看作品</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="work" aria-labelledby="work-title">
+      <div class="section-title">
+        <h2 id="work-title">选一些作品</h2>
+      </div>
+
+      <article class="featured">
+        <div class="feature-copy">
+          <p class="project-kind">网页批注</p>
+          <h3 lang="en">Page Review</h3>
+          <p>直接点出网页上要改的地方，把位置、意见和截图一起交给 AI。改按钮、检查布局，都能从同一个页面开始。</p>
+          <a class="button button-dark" href="https://page-review.paws.rodeo/">打开 Page Review</a>
+        </div>
+
+        <div class="review-showcase" aria-label="Page Review 互动示例">
+          <div class="review-live">
+            <div class="review-live-bar">
+              <span class="review-live-mark"><svg aria-hidden="true" width="17" height="17"><use href="#icon-pin"/></svg> 互动示例</span>
+              <button type="button" class="review-page-mode" data-annotation-target="page" aria-pressed="false">批注整页</button>
+            </div>
+            <div class="review-live-grid">
+              <div class="review-sheet">
+                <p class="review-sheet-label">示例网页</p>
+                <button type="button" class="review-target review-title-target" data-annotation-target="title" aria-pressed="true"><span class="review-pin" aria-hidden="true">01</span>项目笔记</button>
+                <p>把项目里的关键决定和试过的做法记下来。</p>
+                <button type="button" class="review-target review-link-target" data-annotation-target="button" aria-pressed="false"><span class="review-pin" aria-hidden="true">02</span>开始阅读</button>
+              </div>
+              <div class="review-note">
+                <p class="review-note-target"><span>批注对象</span> <strong>标题「项目笔记」</strong></p>
+                <label for="review-note-text">评注意见</label>
+                <textarea id="review-note-text" rows="3" maxlength="500">标题可以点明这一期要讲的项目。</textarea>
+                <button type="button" class="review-note-copy"><svg aria-hidden="true" width="17" height="17"><use href="#icon-copy"/></svg>复制示例</button>
+                <p class="review-copy-state" role="status"></p>
+                <textarea class="review-copy-fallback" aria-label="可手动复制的评注" rows="3" readonly hidden></textarea>
+              </div>
+            </div>
+          </div>
+          <details class="review-evidence">
+            <summary>查看真实操作截图与录制</summary>
+          <figure class="review-demo" aria-label="Page Review 实际操作画面">
+            <div class="demo-chrome">
+              <span class="capture-indicator" aria-hidden="true"></span>
+              <span>扩展实测 · 示例网页</span>
+            </div>
+            <div class="review-media" id="review-media">
+              <img class="review-still" src="assets/review-pin.webp" alt="实际扩展标出示例网页标题，右下角是网页评注面板" width="1276" height="758" loading="lazy" decoding="async">
+              <img class="review-recording" alt="原生录制的网页按钮区域，依次切换选中状态" width="750" height="122" hidden>
+            </div>
+            <figcaption class="review-controls">
+              <div class="review-steps" role="group" aria-label="切换 Page Review 操作画面">
+                  <button type="button" class="icon-button review-step" data-review-step="pin" aria-label="定位网页元素" title="定位网页元素" aria-controls="review-media" aria-pressed="true"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-pin"/></svg></button>
+                  <button type="button" class="icon-button review-step" data-review-step="play" aria-label="播放真实区域录制" title="播放真实区域录制" aria-controls="review-media" aria-pressed="false"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-play"/></svg></button>
+                  <button type="button" class="icon-button review-step" data-review-step="copy" aria-label="查看复制评注" title="查看复制评注" aria-controls="review-media" aria-pressed="false"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-copy"/></svg></button>
+              </div>
+              <div class="review-caption" aria-live="polite" aria-atomic="true">
+                <strong>定位网页元素</strong>
+                <p>点中标题，它在原网页上留下 01 标记。</p>
+              </div>
+            </figcaption>
+          </figure>
+          </details>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project project-paws">
+          <div class="project-visual paws-visual" data-front="desktop">
+            <div class="paws-layers" role="group" aria-label="Paws 设备预览">
+              <button class="paws-device paws-desktop" type="button" data-device="desktop" aria-label="选择 Paws 电脑端" aria-pressed="true">
+                <img src="assets/paws-desktop.webp" alt="" width="690" height="516" loading="lazy" decoding="async" draggable="false">
+              </button>
+              <button class="paws-device paws-phone" type="button" data-device="phone" aria-label="选择 Paws 手机端" aria-pressed="false">
+                <img src="assets/paws-phone.webp" alt="" width="330" height="618" loading="lazy" decoding="async" draggable="false">
+              </button>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-kind">跨设备协作</p>
+            <h3 lang="en">Paws</h3>
+            <p>在手机上接续电脑上的 AI 会话。协作改稿时，可以查看和恢复作品的历史版本。我参与维护，也在记录自己的用法。</p>
+            <a class="text-link brush-link" href="https://github.com/wangjs-jacky/happy">查看项目源码</a>
+          </div>
+        </article>
+        <article class="project project-design">
+          <div class="project-visual design-visual" aria-hidden="true">
+            <div class="design-layers">
+            <div class="swatch swatch-blue"><span>Aa</span></div>
+            <div class="swatch swatch-gold"><span></span></div>
+            <div class="swatch swatch-red"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-kind">设计方法与素材</p>
+            <h3 lang="en">Design OPS</h3>
+            <p>把做过的风格、页面结构和交互收进一处，让下一次做网页时能找到合适的例子，也能照着验收。</p>
+            <a class="text-link brush-link" href="https://design.paws.rodeo/">逛设计风格库</a>
+          </div>
+        </article>
+        <article class="project project-motion">
+          <div class="project-visual motion-case-visual">
+            <div class="motion-case" data-motion-case="first-03">
+              <button class="motion-case-cover" type="button" aria-expanded="false" aria-controls="motion-case-detail">
+                <span class="motion-case-thumb">
+                  <img class="motion-case-image" src="assets/motion-nordkette.jpg" width="1024" height="1536" alt="" loading="lazy" decoding="async">
+                </span>
+                <span class="motion-case-label">
+                  <strong>封面到详情</strong>
+                  <span>展开雪山路线</span>
+                </span>
+                <span class="motion-case-plus" aria-hidden="true">＋</span>
+              </button>
+              <div class="motion-case-detail" id="motion-case-detail" hidden>
+                <div class="motion-case-preview"></div>
+                <div class="motion-case-info">
+                  <div>
+                    <strong lang="en">Nordkette Ridge</strong>
+                    <p>同一张封面展开成详情，收起时回到原位。</p>
+                  </div>
+                  <button class="motion-case-close" type="button">收起详情</button>
+                </div>
+              </div>
+              <div class="motion-case-bridge" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-kind">网页动效</p>
+            <h3 lang="en">Motion OPS</h3>
+            <p>按场景挑选可试用的动效和提示词。这个同图转场保留封面和原卡位置，方便访客从详情回到列表。</p>
+            <a class="text-link brush-link" href="https://motion.paws.rodeo/motion-atlas/">打开 Motion Atlas</a>
+            <a class="text-link brush-link motion-case-source" href="https://motion.paws.rodeo/gallery/demos/first/cases/03.html">查看完整案例</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="notes" id="notes" aria-labelledby="notes-title">
+      <div class="section-title">
+        <h2 id="notes-title">做事笔记</h2>
+      </div>
+      <div class="note-grid">
+        <img class="note-art" src="assets/notes.webp" alt="Jacky 和缅因猫一起看电脑上的内容" width="450" height="300" loading="lazy" decoding="async">
+        <div class="note-list">
+          <a href="https://wangjs-jacky.github.io/one-image-one-story/posts/figwright-free-figma-mcp/"><span>一图一故事</span><strong>Figwright 接上 Figma，能做什么？</strong><span class="note-action">读文章</span></a>
+          <a href="https://www.douyin.com/video/7691335593644625161"><span>工具演示</span><strong>Paws 能干什么？</strong><span class="note-action">看视频</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-teaser" id="about" aria-label="关于 Jacky">
+      <a class="text-link brush-link" href="about.html">关于我</a>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Jacky</span><a class="icon-button " aria-label="回到顶部" title="回到顶部" href="#top"><svg aria-hidden="true" width="21" height="21" focusable="false"><use href="#icon-top"/></svg></a></footer>
+</body>
+</html>
